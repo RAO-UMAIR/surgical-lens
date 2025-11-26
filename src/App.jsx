@@ -2,9 +2,11 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
-import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Layout from "./components/Layout";
+import Lens from "./components/Lens";
+import Gells from "./components/Gells";
+import Injectors from "./components/Injectors";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/products/lens" element={<Lens />} />
+            <Route path="/products/gells" element={<Gells />} />
+            <Route path="/products/injectors" element={<Injectors />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
