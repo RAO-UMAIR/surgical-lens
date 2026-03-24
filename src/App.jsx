@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Layout from "./components/Layout";
-import Lens from "./components/Lens";
+import Cristalens from "./components/Cristalens";
 import Gells from "./components/Gells";
 import Injectors from "./components/Injectors";
 
@@ -17,7 +17,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/products/lens" element={<Lens />} />
+            <Route path="/products/cristalens" element={<Cristalens />} />
             <Route path="/products/gells" element={<Gells />} />
             <Route path="/products/injectors" element={<Injectors />} />
             <Route path="/contact" element={<Contact />} />
