@@ -159,7 +159,7 @@ function Header() {
 
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    desktopProductGroup === "iols" ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                    desktopProductGroup === "iols" ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
                   <ul className="space-y-1.5 pl-3">
@@ -174,11 +174,38 @@ function Header() {
                     </li>
                     <li>
                       <NavLink
-                        to="/home"
+                        to="/products/aqua-750"
                         onClick={closeDesktopProducts}
                         className="block rounded-md px-3 py-2 text-base text-[#6b7280] hover:bg-[#eef2f7] hover:text-[#cc6f12] transition-colors"
                       >
-                        Optaline
+                        Aqua
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/products/pearl-750"
+                        onClick={closeDesktopProducts}
+                        className="block rounded-md px-3 py-2 text-base text-[#6b7280] hover:bg-[#eef2f7] hover:text-[#cc6f12] transition-colors"
+                      >
+                        PEARL
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/products/ac-iol-5-5d"
+                        onClick={closeDesktopProducts}
+                        className="block rounded-md px-3 py-2 text-base text-[#6b7280] hover:bg-[#eef2f7] hover:text-[#cc6f12] transition-colors"
+                      >
+                        AC IOL 5.5D
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/products/ac-iol-6-5d"
+                        onClick={closeDesktopProducts}
+                        className="block rounded-md px-3 py-2 text-base text-[#6b7280] hover:bg-[#eef2f7] hover:text-[#cc6f12] transition-colors"
+                      >
+                        AC IOL 6.5D
                       </NavLink>
                     </li>
                   </ul>
@@ -199,17 +226,35 @@ function Header() {
 
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    desktopProductGroup === "devices" ? "max-h-32 opacity-100" : "max-h-0 opacity-0"
+                    desktopProductGroup === "devices" ? "max-h-56 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
                   <ul className="space-y-1.5 pl-3">
                     <li>
                       <NavLink
-                        to="/home"
+                        to="/products/uv-gell"
                         onClick={closeDesktopProducts}
                         className="block rounded-md px-3 py-2 text-base text-[#6b7280] hover:bg-[#eef2f7] hover:text-[#cc6f12] transition-colors"
                       >
-                        Injectors
+                        UV-Gell
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/products/smi-suture"
+                        onClick={closeDesktopProducts}
+                        className="block rounded-md px-3 py-2 text-base text-[#6b7280] hover:bg-[#eef2f7] hover:text-[#cc6f12] transition-colors"
+                      >
+                        SMI Suture
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/products/surgical-knife"
+                        onClick={closeDesktopProducts}
+                        className="block rounded-md px-3 py-2 text-base text-[#6b7280] hover:bg-[#eef2f7] hover:text-[#cc6f12] transition-colors"
+                      >
+                        Surgical Knife
                       </NavLink>
                     </li>
                   </ul>
@@ -315,7 +360,7 @@ function Header() {
                     </button>
                     <div
                       className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        iolsOpenSmall ? "max-h-40 opacity-100 mt-1" : "max-h-0 opacity-0"
+                        iolsOpenSmall ? "max-h-96 opacity-100 mt-1" : "max-h-0 opacity-0"
                       }`}
                     >
                       <ul className="ml-2 flex flex-col gap-1">
@@ -336,7 +381,7 @@ function Header() {
                         </li>
                         <li>
                           <NavLink
-                            to="/home"
+                            to="/products/aqua-750"
                             onClick={closeMobileMenu}
                             className={({ isActive }) =>
                               `block rounded-md px-3 py-2 transition-colors duration-300 ${
@@ -346,7 +391,52 @@ function Header() {
                               }`
                             }
                           >
-                            Optaline
+                            Aqua
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/products/pearl-750"
+                            onClick={closeMobileMenu}
+                            className={({ isActive }) =>
+                              `block rounded-md px-3 py-2 transition-colors duration-300 ${
+                                isActive
+                                  ? "bg-orange-500/25 text-orange-100"
+                                  : "text-orange-200/90 hover:bg-orange-500/15 hover:text-orange-100"
+                              }`
+                            }
+                          >
+                            PEARL
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/products/ac-iol-5-5d"
+                            onClick={closeMobileMenu}
+                            className={({ isActive }) =>
+                              `block rounded-md px-3 py-2 transition-colors duration-300 ${
+                                isActive
+                                  ? "bg-orange-500/25 text-orange-100"
+                                  : "text-orange-200/90 hover:bg-orange-500/15 hover:text-orange-100"
+                              }`
+                            }
+                          >
+                            AC IOL 5.5D
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/products/ac-iol-6-5d"
+                            onClick={closeMobileMenu}
+                            className={({ isActive }) =>
+                              `block rounded-md px-3 py-2 transition-colors duration-300 ${
+                                isActive
+                                  ? "bg-orange-500/25 text-orange-100"
+                                  : "text-orange-200/90 hover:bg-orange-500/15 hover:text-orange-100"
+                              }`
+                            }
+                          >
+                            AC IOL 6.5D
                           </NavLink>
                         </li>
                       </ul>
@@ -366,13 +456,13 @@ function Header() {
                     </button>
                     <div
                       className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        ophthalmicOpenSmall ? "max-h-40 opacity-100 mt-1" : "max-h-0 opacity-0"
+                        ophthalmicOpenSmall ? "max-h-56 opacity-100 mt-1" : "max-h-0 opacity-0"
                       }`}
                     >
                       <ul className="ml-2 flex flex-col gap-1">
                         <li>
                           <NavLink
-                            to="/home"
+                            to="/products/uv-gell"
                             onClick={closeMobileMenu}
                             className={({ isActive }) =>
                               `block rounded-md px-3 py-2 transition-colors duration-300 ${
@@ -382,7 +472,37 @@ function Header() {
                               }`
                             }
                           >
-                            Injectors
+                            UV-Gell
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/products/smi-suture"
+                            onClick={closeMobileMenu}
+                            className={({ isActive }) =>
+                              `block rounded-md px-3 py-2 transition-colors duration-300 ${
+                                isActive
+                                  ? "bg-orange-500/25 text-orange-100"
+                                  : "text-orange-200/90 hover:bg-orange-500/15 hover:text-orange-100"
+                              }`
+                            }
+                          >
+                            SMI Suture
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/products/surgical-knife"
+                            onClick={closeMobileMenu}
+                            className={({ isActive }) =>
+                              `block rounded-md px-3 py-2 transition-colors duration-300 ${
+                                isActive
+                                  ? "bg-orange-500/25 text-orange-100"
+                                  : "text-orange-200/90 hover:bg-orange-500/15 hover:text-orange-100"
+                              }`
+                            }
+                          >
+                            Surgical Knife
                           </NavLink>
                         </li>
                       </ul>

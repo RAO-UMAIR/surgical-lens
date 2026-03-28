@@ -64,7 +64,7 @@ function Contact() {
             </div>
             <div className="mt-2 space-y-2">
               <div className="flex items-center justify-between rounded-lg bg-indigo-50 px-3 py-2">
-                <a href="mailto:surgicalsightsoltions@gmail.com" className="text-slate-600 hover:text-blue-600">surgicalsightsoltions@gmail.com</a>
+                <a href="mailto:surgicalsightsolutions@gmail.com" className="text-slate-600 hover:text-blue-600">surgicalsightsolutions@gmail.com</a>
                 <span className="rounded-full bg-indigo-200 px-2 text-xs font-semibold text-indigo-800">1</span>
               </div>
               <div className="flex items-center justify-between rounded-lg bg-indigo-50 px-3 py-2">

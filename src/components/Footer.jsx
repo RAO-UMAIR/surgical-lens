@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { HiOutlineChevronRight } from "react-icons/hi";
-import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { IoLocation } from "react-icons/io5";
 
 function Footer() {
@@ -34,39 +35,39 @@ function Footer() {
         <HiOutlineChevronRight className="text-orange-500"/>
         CRISTALENS
       </Link>
-      <Link to="/home" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
+      <Link to="/products/smi-suture" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
         <HiOutlineChevronRight className="text-orange-500"/>
-        OPTALINE
+        SMI Suture
       </Link>
-      <Link to="/home" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
+      <Link to="/products/uv-gell" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
         <HiOutlineChevronRight className="text-orange-500"/>
-        INJECTORS
+        UV Gells
       </Link>
 
 
     </div>
     {/* Grid-col-3 */}
-    <div className="flex flex-col justify-start gap-4 md:gap-6 text-sm md:text-base text-zinc-500 font-light sm:ml-6 lg:ml-0">
+    <div className="flex flex-col justify-start gap-3 md:gap-8 text-sm md:text-base text-zinc-500 font-light sm:ml-6 lg:ml-0">
       <h1 className="font-medium text-xl md:text-2xl text-zinc-600">SOCIAL LINKS</h1>
       <a href="https://wa.me/03033802020" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
         <FaWhatsapp className="text-green-400 text-[18px] md:text-[20px]"/>
         WhatsApp 
       </a>
-      <a href="https://www.instagram.com/surgicalsightsolutions" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
+      <a href="https://www.instagram.com/3s.surgicals?igsh=M2RzY2pmbXY2NnZ2" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
         <FaInstagram className="text-pink-400 text-[18px] md:text-[20px]"/>
         Instagram
       </a>
-      <a href="https://www.facebook.com/surgicalsightsolutions" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
+      <a href="https://www.facebook.com/share/1GRZdJhd8h/" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
         <FaFacebook className="text-blue-500 text-[18px] md:text-[20px]"/>
         Facebook
       </a>
-      <a href="https://www.linkedin.com/company/surgicalsightsolutions" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
-        <FaLinkedin className="text-sky-400 text-[18px] md:text-[20px]"/>
-        LinkedIn
+      <a href="https://x.com/3Ssurgicals" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-1.5 md:gap-2 cursor-pointer hover:text-orange-500">
+        <FaXTwitter className="text-zinc-700 text-[18px] md:text-[20px]"/>
+        Twitter
       </a>
     </div>
     {/* Grid-col-4 */}
-    <div className="flex flex-col justify-start gap-3 md:gap-4 text-sm md:text-base text-zinc-500 font-light">
+    <div className="flex flex-col justify-start gap-3 md:gap-8 text-sm md:text-base text-zinc-500 font-light">
       <h1 className="font-medium text-xl md:text-2xl text-zinc-600">HEAD OFFICE</h1>
       <div className="inline-flex flex-col">
         <div className="inline-flex items-center gap-2.5 md:gap-3">
@@ -83,8 +84,8 @@ function Footer() {
         <a href="tel:+923033802020" className="hover:text-orange-500 text-zinc-500">
           <span className="font-semibold text-zinc-500">Phone:</span> +92-3033802020
         </a>
-        <a href="mailto:surgicalsightsoltions@gmail.com" className="hover:text-orange-500 text-zinc-500">
-          <span className="font-semibold text-zinc-500">Email:</span> surgicalsightsoltions@gmail.com
+        <a href="mailto:surgicalsightsolutions@gmail.com" className="hover:text-orange-500 text-zinc-500">
+          <span className="font-semibold text-zinc-500">Email:</span> surgicalsightsolutions@gmail.com
         </a>
       </div>
 
@@ -95,7 +96,17 @@ function Footer() {
 
     <div className="mt-6 border-t border-[#d9dee5] pt-4 text-center">
       <p className="text-sm md:text-[15px] font-medium text-[#5f6672] tracking-[0.01em]">
-        Copyright {currentYear} @ Surgical Sight Solutions.
+        Copyright © 2026 Surgical Sight Solution
+        <br />
+        Developed by {" "}
+        <a
+          href="https://www.linkedin.com/in/raoumair792/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-600 hover:text-blue-700 underline-offset-2 hover:underline"
+        >
+          Rao Umair
+        </a>
       </p>
     </div>
   </div>;

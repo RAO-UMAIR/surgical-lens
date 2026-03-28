@@ -3,7 +3,7 @@ function About() {
     "Intraocular Lenses",
     "Injectors",
     "Ophthalmic Scissors",
-    "Surgical Gels",
+    "Surgical Gells",
     "Related Eye-Care Devices",
   ];
 
@@ -39,6 +39,9 @@ function About() {
     "Sadiqabad",
     "Bahawalpur",
     "Ali Pur",
+    "Karachi",
+    "Sukkur",
+    "Hyderabad",
   ];
 
   return (
@@ -150,10 +153,10 @@ function About() {
             OUR DISTRIBUTION CITIES
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2c1810]">
-            Serving Across Punjab
+            Serving Across Punjab & Sindh
           </h2>
           <p className="mt-3 text-[#6b4423] text-base sm:text-lg max-w-4xl leading-relaxed">
-            Surgical Sight Solutions is actively working across the complete Punjab region. We continue to support hospitals,
+            Surgical Sight Solutions is actively working across Punjab and Sindh. We continue to support hospitals,
             clinics, and eye-care professionals with timely access to trusted ophthalmic products.
           </p>
 

@@ -10,25 +10,10 @@ export default function Home() {
   const [isMobileReviews, setIsMobileReviews] = useState(window.innerWidth < 768);
 
   const images = [
-
-    // "/images/large-images/leat-lens.png",
-    // "/images/large-images/intraocular.png",
-    // "/images/large-images/planting-lens.png",
-    // "/images/large-images/lens-face.png",
-    // "/images/large-images/knife.png",
-    // "/images/large-images/green-injector.png",
-    // "/images/large-images/injector-leat.png",
-
     "/images/home-carousel-images/image-five.png",
     "/images/home-carousel-images/image-two.png",
     "/images/home-carousel-images/image-three.png",
-    "/images/home-carousel-images/image-four.png",
-    "/images/home-carousel-images/image-six.png",
     "/images/home-carousel-images/image-one.png",
-    "/images/home-carousel-images/image-seven.png"
-
-
-
   ];
 
   // Auto-play functionality - moves forward automatically
@@ -111,7 +96,7 @@ export default function Home() {
       degree: "Consultant Ophthalmologist / Eye Surgeon",
       hospital: "Laser Eye Center, Multan",
       image: "/images/doctors/dr-four.png",
-      text: "Sir,We are honored to have your trust in our products.Your dedication to excellence inspires us every day.Thank you for your continued support."
+      text: "Being Pakistan’s first pre-loaded toric lens, it sets a new standard in ophthalmic surgery. The implantation is very easy and controlled, which enhances surgical performance. Along with that, its excellent range and reliable results make it a highly recommended choice."
     },
     {
       name: "Dr Rana Fahad",
@@ -119,21 +104,21 @@ export default function Home() {
       hospital: "Rana Eye Care, Multan",
       image: "/images/doctors/dr-one.png",
 
-      text: "We sincerely appreciate your trust in our products.Your confidence motivates us to maintain the highest standards in quality and care.Thank you for being a valued partner."
+      text: "I’ve been using these lenses for a while now, and I must say the delivery system is extremely smooth and user-friendly. The implantation process is quick and precise, and the post-surgery clarity for patients is excellent."
     },
     {
       name: "Dr Rana Sarfarz",
       degree: "MBBS, FCPS Ophthalmology",
       hospital: "Sarfraz Eye & Maternity Home, Multan",
       image: "/images/doctors/dr-two.png",
-      text: "Thanks for trusting 3S Surgical and choosing our EAZ-Y(Monofocal) products for surgical procedures.We truly value your continued support and partnership."
+      text: "The quality of the lens material is impressive. It ensures long-term stability and does not degrade over time. My patients have experienced outstanding visual outcomes after surgery."
     },
     {
       name: "Dr Arsalan Saleem",
       degree: "Consultant Ophthalmologist / Eye Surgeon, MBBS, FCPS (Ophthalmology)",
       hospital: "",
       image: "/images/doctors/dr-three.png",
-      text: "Big thanks for trusting our products!We’re proud to support your work and contribute to better outcomes.Looking forward to growing together."
+      text: "The advanced material used in these lenses makes a noticeable difference. It is durable, safe, and ensures that the eye remains unaffected in the long run."
     },
 
     {
@@ -141,7 +126,7 @@ export default function Home() {
       degree: "MBBS, FCPS",
       hospital: "Farooq eye & Surgical Clinic, Dunyapur",
       image: "/images/doctors/dr-five.png",
-      text: "We sinsierly Thanks to  you for choosing our products in your practice.Your support means a lot to us and inspires continuous improvement.We’re grateful to be part of your journey."
+      text: "These lenses deliver reliable and consistent results. The clarity achieved after surgery is remarkable, and patients report high satisfaction levels."
     },
 
   ];
@@ -204,7 +189,7 @@ export default function Home() {
   useEffect(() => {
     const reviewsInterval = setInterval(() => {
       nextReviewSlide();
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(reviewsInterval);
   }, [reviewGroups.length]);
