@@ -51,17 +51,17 @@ function Header() {
   }, [productCategory]);
 
   return (
-    <div className="sticky top-0 z-50 flex justify-between items-center py-4 px-4 md:py-3 md:px-10 bg-white md:border-b md:border-[#e7ebf0] md:shadow-[0_10px_28px_rgba(15,23,42,0.06)]">
+    <div className="sticky top-0 z-50 flex justify-between items-center py-4 px-4 md:py-2 md:px-7 lg:px-8 bg-white md:border-b md:border-[#e7ebf0] md:shadow-[0_8px_20px_rgba(15,23,42,0.05)]">
       <Link to="/home" className="flex items-center">
         <img
           src="/images/logo3-cropped.png"
           alt="app Logo"  
-          className="h-10 sm:h-11 md:h-12 lg:h-14 w-auto object-contain"
+          className="h-10 sm:h-11 md:h-10 lg:h-11 w-auto object-contain"
         />
       </Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex md:justify-between md:items-center font-semibold md:gap-12 md:text-base lg:text-lg">
+      <div className="hidden md:flex md:justify-between md:items-center font-semibold md:gap-8 md:text-sm lg:text-base">
         <NavLink
           to="/home"
           className={({ isActive }) =>
@@ -85,7 +85,7 @@ function Header() {
         </NavLink>
 
         <div
-          className={`relative py-6 inline-block transition-colors duration-300 ${
+          className={`relative py-4 inline-block transition-colors duration-300 ${
             isProductsActive ? "text-[#cc6f12]" : "text-[#8c96a5] hover:text-[#cc6f12]"
           }`}
         >
@@ -115,7 +115,7 @@ function Header() {
           aria-label="Chat on WhatsApp"
           className="text-green-500 hover:text-green-600 transition-colors"
         >
-          <FaWhatsapp className="text-3xl whatsapp-pulse" />
+          <FaWhatsapp className="text-2xl whatsapp-pulse" />
         </a>
       </div>
 

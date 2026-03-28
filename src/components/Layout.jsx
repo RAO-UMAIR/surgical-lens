@@ -11,7 +11,7 @@ function Layout() {
   }, [location.pathname]);
 
   return (
-    <div>
+    <div className="site-shell">
       <Header />
       <main>
         <Outlet />
