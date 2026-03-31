@@ -11,8 +11,7 @@ function Footer() {
     <div className="flex flex-col gap-4 md:gap-4 items-start justify-start md:w-60 lg:w-64">
       {/* <img src="/images/logo3.png" className="w-32 sm:w-40 md:w-44 lg:w-24" /> */}
         <img
-          src="/images/logo3-cropped.png"
-          // src="/images/logo_transparent-2.png"
+        src="/images/reset-logo.png"
           alt="app Logo"
           className="h-8 sm:h-9 md:h-9 lg:h-10 w-auto object-contain"
         />

@@ -54,7 +54,7 @@ function Header() {
     <div className="sticky top-0 z-50 flex justify-between items-center py-4 px-4 md:py-2 md:px-7 lg:px-8 bg-white md:border-b md:border-[#e7ebf0] md:shadow-[0_8px_20px_rgba(15,23,42,0.05)]">
       <Link to="/home" className="flex items-center">
         <img
-          src="/images/logo3-cropped.png"
+          src="/images/reset-logo.png"
           alt="app Logo"  
           className="h-10 sm:h-11 md:h-10 lg:h-11 w-auto object-contain"
         />
